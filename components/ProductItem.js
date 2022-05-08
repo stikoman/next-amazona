@@ -6,10 +6,10 @@ import {
   CardContent,
   CardMedia,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import React from 'react';
 import NextLink from 'next/link';
-import Rating from '@material-ui/lab/Rating';
+import Rating from '@mui/material/Rating';
 
 export default function ProductItem({ product, addToCartHandler }) {
   return (
@@ -28,7 +28,7 @@ export default function ProductItem({ product, addToCartHandler }) {
         </CardActionArea>
       </NextLink>
       <CardActions>
-        <Typography>${product.price}</Typography>
+        <Typography>SRD{product.price}</Typography>
         <Button
           size="small"
           color="primary"
